@@ -1,4 +1,4 @@
-import yaml
-f = open('config.yml','r')
-y = yaml.load(f, Loader=yaml.FullLoader)
-print(y)
+from yaml import *
+f = open('mal.yml','r')
+deserialized_data = unsafe_load(f)
+print(deserialized_data)
